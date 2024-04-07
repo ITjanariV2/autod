@@ -52,7 +52,7 @@ button.addEventListener('click', e => {
 
 function sendReq(brand, yearOne, yearTwo, distanceOne, distanceTwo, fuel, gearbox, type, drive, perPage) {
 
-    fetch("http://localhost:3306/submit", {
+    fetch("https://autod.onrender.com/submit", {
         method: "POST",
         headers: {
             "Content-Type": "application/json; charset=UTF-8"
