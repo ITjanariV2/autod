@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: sans-serif;
+    height: 100%;
+    background: linear-gradient(to bottom, #7386a6 20%, #959aaf 40%, #bdadb0 60%, #e8bca5 85%, #f1b183 100%);
+}
+
+#err {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    width: 175px;
+    height: 100vh;
+    background-color: rgb(77, 77, 77);
+    position: fixed;
+    color: rgb(230, 230, 230)
+}
+
+#form > div {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#form > div > label {
+    padding: 2px 0px;
+}
+
+input, select {
+    width: 150px;
+    padding: 5px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid rgb(206, 206, 206);
+    outline: none;
+    border-radius: 0.25em;
+    transition: 0.2s;
+}
+
+input:focus {
+    border: 2px solid #7386a6;
+}
+
+#form > div > div > input {
+    width: calc((150px / 2) - 7px)
+}
+
+
+#sendBtn {
+    width: 150px;
+    height: 30px;
+    border: 2px solid rgb(206, 206, 206);
+    outline: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+#sendBtn:hover {
+    border: 2px solid #7386a6;
+}
+
+
+#containerTwo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.autod {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: calc(100vw - 190px);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.thumb {
+    min-height: 150px;
+    max-height: 150px;
+    width: 210px;
+    object-fit: cover;
+    background: no-repeat center center;
+    border-radius: 3px;
+}
+
+.textInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 0.5em;
+    width: 410px;
+}
+
+.autoinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(173, 173, 173);
+    gap: 1em;
+    border-radius: 4px;
+    margin: 5px;
+    height: 200px;
+    width: 750px;
+    color: white;
+}
+
+/* kirjeldus */
+.extra {
+    font-size: 0.9em;
+    padding: 15px 5px 10px 5px;
+    text-align: center;
+}
+
+.extra > span:not(:last-child):after {
+    content: '|';
+    padding: 0 5px;
+    color: rgb(208, 208, 208);
+  }
+.title {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+
+#paginationContainer {
+    display: none;
+    justify-content: flex-end;
+    margin: 10px 0px;
+    color: white;
+}
+
+.pagination {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 190px);
+    gap: 30px;
+    margin: 5px;
+}
+
+.pagination > a {
+    text-decoration: none;
+    color: white;
+    background-color: skyblue;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#paginationContainer > div > div {
+    display: flex;
+}

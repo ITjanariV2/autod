@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="domjs.js" defer></script>
+</head>
+<body>
+    <p id="err">0 tulemust</p>
+    <form id="form">
+        <div>
+            <label for="brand">Mark</label>
+            <input type="text" id="brand" name="brand">
+        </div>
+        <div>
+            <label>Aasta</label>
+            <div>
+                <input type="number" id="yearOne" name="yearOne" placeholder="Alates"> -
+                <input type="number" id="yearTwo" name="yearTwo" placeholder="Kuni">
+            </div>
+        </div>
+        <div>
+            <label>Läbisõit</label>
+            <div>
+                <input type="number" id="distanceOne" name="distanceOne" placeholder="Alates"> -
+                <input type="number" id="distanceTwo" name="distanceTwo" placeholder="Kuni">
+            </div>
+        </div>
+        <div>
+            <label for="fuel">Kütus</label>
+            <input type="text" id="fuel" name="fuel">
+        </div>
+        <div>
+            <label for="gearbox">Käigukast</label>
+            <input type="text" id="gearbox" name="gearbox">
+        </div>
+        <div>
+            <label for="type">Keretüüp</label>
+            <input type="text" id="type" name="type">
+        </div>
+
+        <div>
+            <label for="drive">Vedav sild</label>
+            <input type="text" id="drive" name="drive">
+        </div>
+
+        <div>
+            <label for="perPage">Kuva korraga</label>
+            <select id="perPage" name="perPage">
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+        </div>
+
+        <button id="sendBtn" type="submit">Otsi</button>
+    </form>
+
+    <section id="containerTwo">
+        <div class="autod"></div>
+    </section>
+
+    <section id="paginationContainer">
+        <div class="pagination" id="pagination"> 
+            <a id="prev">Eelmine</a> 
+            <a id="next">Järgmine</a> 
+            <div>
+                <p id="pageNum"></p>
+                <p id="pagesTotal"></p>
+            </div>
+            <p id="countTotal"></p>
+        </div> 
+    </section>
+
+</body>
+</html>
