@@ -1,2 +1,2 @@
 # autod
-# Projekt on loodud hariduslikel eesmärkidel
+# NB! Projekt on loodud hariduslikel eesmärkidel
