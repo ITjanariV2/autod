@@ -32,7 +32,6 @@ for (let x in jsonFile) {
     jsonFile[x].image] // image
     
     arrayToBeFilled.push(values)
-    // console.log(values)
     count++
 }
 
